@@ -47,19 +47,25 @@
     };
 
     macros {
-        gif: gif {
-            label = "giphy";
+        my_aa: my_aa {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
+            bindings = <&kt RIGHT_ALT &kp O &kp A>;
+            label = "MY_AA";
+        };
+
+        my_ae: my_ae {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt RIGHT_ALT &kp O &kp E>;
+            label = "MY_AE";
+        };
+
+        my_oe: my_oe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt RIGHT_ALT &kp SLASH &kp O>;
+            label = "MY_OE";
         };
     };
 
@@ -137,8 +143,8 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp EXCL     &kp AT       &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS      &kp RA(U)   &kp PG_UP   &kp HOME
-           &kp TILDE    &trans       &trans    &trans    &trans       &kp C_MUTE    &trans        &trans      &kp PG_DN   &kp END
+           &kp EXCL     &kp AT       &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS      &my_aa      &kp PG_UP   &kp HOME
+           &kp TILDE    &trans       &trans    &trans    &trans       &kp C_MUTE    &my_ae        &my_oe      &kp PG_DN   &kp END
 &kp GRAVE  &kp RA(F18)  &kp RA(F19)  &trans    &trans    &trans       &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_NEXT  &kp BSLH  &trans
                                      &trans    &trans    &mo ADJ      &trans        &kp C_PP      &trans
             >;
