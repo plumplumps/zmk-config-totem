@@ -39,7 +39,7 @@
             key-positions = <5 6>;
         };
 
-        c_AE {
+        cc_ae {
             bindings = <&my_AE>;
             key-positions = <5 6 20>;
         };
@@ -49,7 +49,7 @@
             key-positions = <15 16>;
         };
 
-        c_OE {
+        cc_oe {
             bindings = <&my_OE>;
             key-positions = <16 15 20>;
         };
@@ -59,7 +59,7 @@
             key-positions = <26 27>;
         };
 
-        c_AA {
+        cc_aa {
             bindings = <&my_AA>;
             key-positions = <20 27 26>;
         };
