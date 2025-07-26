@@ -34,46 +34,85 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
+        c_ae {
+            bindings = <&my_ae>;
+            key-positions = <5 6>;
         };
 
-        combo_tvp {
-            timeout-ms = <100>;
-            key-positions = <11 12 13>;
-            bindings = <&tog TVP1>;
+        c_AE {
+            bindings = <&my_AE>;
+            key-positions = <5 6 20>;
+        };
+
+        c_oe {
+            bindings = <&my_oe>;
+            key-positions = <15 16>;
+        };
+
+        c_OE {
+            bindings = <&my_OE>;
+            key-positions = <16 15 20>;
+        };
+
+        c_aa {
+            bindings = <&my_aa>;
+            key-positions = <26 27>;
+        };
+
+        c_AA {
+            bindings = <&my_AA>;
+            key-positions = <20 27 26>;
         };
     };
 
     macros {
-        my_aa: my_aa {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt RIGHT_ALT &kp O &kp A>;
-            label = "MY_AA";
-        };
-
-        my_ae: my_ae {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt RIGHT_ALT &kp O &kp E>;
-            label = "MY_AE";
-        };
-
-        my_oe: my_oe {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt RIGHT_ALT &kp SLASH &kp O>;
-            label = "MY_OE";
-        };
-
         zzz: zzz {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N0 &kp N0 &kp N0>;
             label = "ZZZ";
+        };
+
+        my_aa: my_aa {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp N5>;
+            label = "MY_AA";
+        };
+
+        my_AA: my_AA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N5>;
+            label = "MY_AA";
+        };
+
+        my_oe: my_oe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp F &kp NUMBER_8>;
+            label = "MY_OE";
+        };
+
+        my_OE: my_OE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp D &kp NUMBER_8>;
+            label = "MY_OE";
+        };
+
+        my_ae: my_ae {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp NUMBER_6>;
+            label = "MY_AE";
+        };
+
+        my_AE: my_AE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp NUMBER_6>;
+            label = "MY_AE";
         };
     };
 
