@@ -40,7 +40,7 @@
         };
 
         cc_ae {
-            bindings = <&my_AE>;
+            bindings = <&my_aee>;
             key-positions = <5 6 20>;
         };
 
@@ -50,7 +50,7 @@
         };
 
         cc_oe {
-            bindings = <&my_OE>;
+            bindings = <&my_oee>;
             key-positions = <16 15 20>;
         };
 
@@ -60,7 +60,7 @@
         };
 
         cc_aa {
-            bindings = <&my_AA>;
+            bindings = <&my_aaa>;
             key-positions = <20 27 26>;
         };
     };
@@ -80,7 +80,7 @@
             label = "MY_AA";
         };
 
-        my_AA: my_AA {
+        my_aaa: my_AA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N5>;
@@ -94,7 +94,7 @@
             label = "MY_OE";
         };
 
-        my_OE: my_OE {
+        my_oee: my_OE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp D &kp NUMBER_8>;
@@ -108,7 +108,7 @@
             label = "MY_AE";
         };
 
-        my_AE: my_AE {
+        my_aee: my_AE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp NUMBER_6>;
