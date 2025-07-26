@@ -174,10 +174,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp EXCL     &kp AT     &kp HASH    &kp LBRC   &kp RBRC    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp PG_UP
-           &kp TILDE    &kp HASH   &kp DOLLAR  &kp LBKT   &kp RBKT    &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &kp PG_DN
-&kp GRAVE  &kp PERCENT  &kp CARET  &kp AMPS    &kp LPAR   &kp RPAR    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp HOME   &kp END
-                                   &mkp LCLK   &mkp RCLK  &mo ADJ     &trans          &trans          &trans
+           &kp EXCL   &kp AT      &kp HASH     &kp LBRC   &kp RBRC    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp PG_UP
+           &kp TILDE  &kp DOLLAR  &kp PERCENT  &kp LBKT   &kp RBKT    &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &kp PG_DN
+&kp GRAVE  &kp CARET  &kp AMPS    &trans       &kp LPAR   &kp RPAR    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp HOME   &kp END
+                                  &mkp LCLK    &mkp RCLK  &mo ADJ     &trans          &trans          &trans
             >;
         };
 
