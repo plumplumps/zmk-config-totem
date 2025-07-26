@@ -39,29 +39,14 @@
             key-positions = <5 6>;
         };
 
-        cc_ae {
-            bindings = <&my_aee>;
-            key-positions = <5 6 20>;
-        };
-
         c_oe {
             bindings = <&my_oe>;
             key-positions = <15 16>;
         };
 
-        cc_oe {
-            bindings = <&my_oee>;
-            key-positions = <16 15 20>;
-        };
-
         c_aa {
             bindings = <&my_aa>;
             key-positions = <26 27>;
-        };
-
-        cc_aa {
-            bindings = <&my_aaa>;
-            key-positions = <20 27 26>;
         };
     };
 
