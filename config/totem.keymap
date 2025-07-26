@@ -31,24 +31,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        c_ae {
-            bindings = <&my_ae>;
-            key-positions = <5 6>;
-        };
-
-        c_oe {
-            bindings = <&my_oe>;
-            key-positions = <15 16>;
-        };
-
-        c_aa {
-            bindings = <&my_aa>;
-            key-positions = <26 27>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         zzz: zzz {
