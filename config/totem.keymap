@@ -33,57 +33,6 @@
 / {
     combos { compatible = "zmk,combos"; };
 
-    macros {
-        zzz: zzz {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N0 &kp N0 &kp N0>;
-            label = "ZZZ";
-        };
-
-        my_aa: my_aa {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp N5>;
-            label = "MY_AA";
-        };
-
-        my_aaa: my_AA {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N5>;
-            label = "MY_AA";
-        };
-
-        my_oe: my_oe {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp F &kp NUMBER_8>;
-            label = "MY_OE";
-        };
-
-        my_oee: my_OE {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp D &kp NUMBER_8>;
-            label = "MY_OE";
-        };
-
-        my_ae: my_ae {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp NUMBER_6>;
-            label = "MY_AE";
-        };
-
-        my_aee: my_AE {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp NUMBER_6>;
-            label = "MY_AE";
-        };
-    };
-
     behaviors {
         make_oe: make_oe {
             compatible = "zmk,behavior-tap-dance";
