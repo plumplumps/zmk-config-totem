@@ -33,29 +33,6 @@
 / {
     combos { compatible = "zmk,combos"; };
 
-    behaviors {
-        make_oe: make_oe {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MAKE_OE";
-            #binding-cells = <0>;
-            bindings = <&kp O>, <&my_oe>;
-        };
-
-        make_ae: make_ae {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MAKE_AE";
-            #binding-cells = <0>;
-            bindings = <&kp E>, <&my_ae>;
-        };
-
-        make_aa: make_aa {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MAKE_AA";
-            #binding-cells = <0>;
-            bindings = <&kp P>, <&my_aa>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
